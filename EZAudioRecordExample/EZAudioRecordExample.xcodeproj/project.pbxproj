@@ -29,6 +29,14 @@
 		674A8E061F7D9DBB00ADADB8 /* MarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 674A8E051F7D9DBB00ADADB8 /* MarqueeView.m */; };
 		674A8E081F7D9F5600ADADB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674A8E071F7D9F5600ADADB8 /* Main.storyboard */; };
 		674A8E0A1F7DA23200ADADB8 /* altbeast.png in Resources */ = {isa = PBXBuildFile; fileRef = 674A8E091F7DA23200ADADB8 /* altbeast.png */; };
+		67B255C91F7E404600417CE2 /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B255C41F7E404600417CE2 /* UIImage+Scale.m */; };
+		67B255CA1F7E404600417CE2 /* SLColorArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B255C51F7E404600417CE2 /* SLColorArt.m */; };
+		67B255CB1F7E404600417CE2 /* UIImage+ColorArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B255C81F7E404600417CE2 /* UIImage+ColorArt.m */; };
+		67B255CE1F7E436C00417CE2 /* defender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67B255CC1F7E429200417CE2 /* defender.jpg */; };
+		67B255CF1F7E436F00417CE2 /* c413753364ffbf8341be5bd3332d9653.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67B255CD1F7E42E800417CE2 /* c413753364ffbf8341be5bd3332d9653.jpg */; };
+		67B255D11F7E478F00417CE2 /* marquee_back_to_the_arcade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67B255D01F7E476800417CE2 /* marquee_back_to_the_arcade.jpg */; };
+		67B255D31F7E6B1200417CE2 /* c413753364ffbf8341be5bd3332d9653-reverse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67B255D21F7E6AF100417CE2 /* c413753364ffbf8341be5bd3332d9653-reverse.jpg */; };
+		67B255D51F7E6B5800417CE2 /* c413753364ffbf8341be5bd3332d9653-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67B255D41F7E6B5500417CE2 /* c413753364ffbf8341be5bd3332d9653-square.jpg */; };
 		940570CC185E7F8300EB94BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940570CB185E7F8300EB94BA /* Foundation.framework */; };
 		940570CE185E7F8300EB94BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940570CD185E7F8300EB94BA /* CoreGraphics.framework */; };
 		940570D0185E7F8300EB94BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940570CF185E7F8300EB94BA /* UIKit.framework */; };
@@ -103,6 +111,17 @@
 		674A8E051F7D9DBB00ADADB8 /* MarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeView.m; sourceTree = "<group>"; };
 		674A8E071F7D9F5600ADADB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		674A8E091F7DA23200ADADB8 /* altbeast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = altbeast.png; sourceTree = "<group>"; };
+		67B255C31F7E404600417CE2 /* UIImage+Scale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		67B255C41F7E404600417CE2 /* UIImage+Scale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		67B255C51F7E404600417CE2 /* SLColorArt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLColorArt.m; sourceTree = "<group>"; };
+		67B255C61F7E404600417CE2 /* UIImage+ColorArt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorArt.h"; sourceTree = "<group>"; };
+		67B255C71F7E404600417CE2 /* SLColorArt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLColorArt.h; sourceTree = "<group>"; };
+		67B255C81F7E404600417CE2 /* UIImage+ColorArt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorArt.m"; sourceTree = "<group>"; };
+		67B255CC1F7E429200417CE2 /* defender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defender.jpg; sourceTree = "<group>"; };
+		67B255CD1F7E42E800417CE2 /* c413753364ffbf8341be5bd3332d9653.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c413753364ffbf8341be5bd3332d9653.jpg; sourceTree = "<group>"; };
+		67B255D01F7E476800417CE2 /* marquee_back_to_the_arcade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marquee_back_to_the_arcade.jpg; sourceTree = "<group>"; };
+		67B255D21F7E6AF100417CE2 /* c413753364ffbf8341be5bd3332d9653-reverse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "c413753364ffbf8341be5bd3332d9653-reverse.jpg"; sourceTree = "<group>"; };
+		67B255D41F7E6B5500417CE2 /* c413753364ffbf8341be5bd3332d9653-square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "c413753364ffbf8341be5bd3332d9653-square.jpg"; path = "../../../../../private/tmp/c413753364ffbf8341be5bd3332d9653-square.jpg"; sourceTree = "<group>"; };
 		940570C8185E7F8300EB94BA /* EZAudioRecordExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZAudioRecordExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940570CB185E7F8300EB94BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		940570CD185E7F8300EB94BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -217,6 +236,11 @@
 		940570BF185E7F8300EB94BA = {
 			isa = PBXGroup;
 			children = (
+				67B255D41F7E6B5500417CE2 /* c413753364ffbf8341be5bd3332d9653-square.jpg */,
+				67B255D01F7E476800417CE2 /* marquee_back_to_the_arcade.jpg */,
+				67B255CC1F7E429200417CE2 /* defender.jpg */,
+				67B255D21F7E6AF100417CE2 /* c413753364ffbf8341be5bd3332d9653-reverse.jpg */,
+				67B255CD1F7E42E800417CE2 /* c413753364ffbf8341be5bd3332d9653.jpg */,
 				674A8E071F7D9F5600ADADB8 /* Main.storyboard */,
 				940570D1185E7F8300EB94BA /* EZAudioRecordExample */,
 				940570F3185E7F8300EB94BA /* EZAudioRecordExampleTests */,
@@ -251,6 +275,12 @@
 		940570D1185E7F8300EB94BA /* EZAudioRecordExample */ = {
 			isa = PBXGroup;
 			children = (
+				67B255C71F7E404600417CE2 /* SLColorArt.h */,
+				67B255C51F7E404600417CE2 /* SLColorArt.m */,
+				67B255C61F7E404600417CE2 /* UIImage+ColorArt.h */,
+				67B255C81F7E404600417CE2 /* UIImage+ColorArt.m */,
+				67B255C31F7E404600417CE2 /* UIImage+Scale.h */,
+				67B255C41F7E404600417CE2 /* UIImage+Scale.m */,
 				674A8E091F7DA23200ADADB8 /* altbeast.png */,
 				09E3EB6D1A19ED44000022FB /* EZAudio */,
 				094761DF1A2151D1004960A8 /* ZLHistogramAudioPlot */,
@@ -377,10 +407,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B255CF1F7E436F00417CE2 /* c413753364ffbf8341be5bd3332d9653.jpg in Resources */,
+				67B255CE1F7E436C00417CE2 /* defender.jpg in Resources */,
+				67B255D31F7E6B1200417CE2 /* c413753364ffbf8341be5bd3332d9653-reverse.jpg in Resources */,
 				674A8E0A1F7DA23200ADADB8 /* altbeast.png in Resources */,
 				940570E7185E7F8300EB94BA /* Images.xcassets in Resources */,
 				674A8DFE1F7D99A500ADADB8 /* MarqueeView.xib in Resources */,
 				674A8E081F7D9F5600ADADB8 /* Main.storyboard in Resources */,
+				67B255D51F7E6B5800417CE2 /* c413753364ffbf8341be5bd3332d9653-square.jpg in Resources */,
+				67B255D11F7E478F00417CE2 /* marquee_back_to_the_arcade.jpg in Resources */,
 				940570D6185E7F8300EB94BA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,11 +436,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				674A8DF31F7D95C800ADADB8 /* EZAudioFloatData.m in Sources */,
+				67B255CB1F7E404600417CE2 /* UIImage+ColorArt.m in Sources */,
 				674A8DF11F7D95C800ADADB8 /* EZAudioFile.m in Sources */,
 				674A8DF51F7D95C800ADADB8 /* EZAudioPlot.m in Sources */,
 				674A8DF61F7D95C800ADADB8 /* EZAudioPlotGL.m in Sources */,
 				674A8E021F7D9A2D00ADADB8 /* MainViewController.m in Sources */,
 				674A8DF01F7D95C800ADADB8 /* EZAudioFFT.m in Sources */,
+				67B255C91F7E404600417CE2 /* UIImage+Scale.m in Sources */,
 				094761E21A2151D1004960A8 /* ZLHistogramAudioPlot.m in Sources */,
 				674A8DF91F7D95C800ADADB8 /* EZOutput.m in Sources */,
 				94057105185E805900EB94BA /* RecordViewController.m in Sources */,
@@ -419,6 +456,7 @@
 				674A8DF41F7D95C800ADADB8 /* EZAudioPlayer.m in Sources */,
 				674A8DF81F7D95C800ADADB8 /* EZMicrophone.m in Sources */,
 				940570D8185E7F8300EB94BA /* main.m in Sources */,
+				67B255CA1F7E404600417CE2 /* SLColorArt.m in Sources */,
 				674A8DED1F7D95C800ADADB8 /* EZAudio.m in Sources */,
 				674A8DFC1F7D95C800ADADB8 /* TPCircularBuffer.c in Sources */,
 				674A8DF21F7D95C800ADADB8 /* EZAudioFloatConverter.m in Sources */,

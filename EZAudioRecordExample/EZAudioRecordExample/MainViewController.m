@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "MarqueeView.h"
 #import "EZAudio.h"
-
+#import "SLColorArt.h"
 
 @interface MainViewController ()
 @property   (retain)    UIWindow    *externalWindow;
@@ -36,6 +36,11 @@
     {
         [self initializeExternalScreen:[[UIScreen screens] objectAtIndex:1]];
     }
+    else
+    {
+        [self initializeExternalScreen:[UIScreen mainScreen]];
+    }
+    
 }
 
 - (void)handleScreenDidConnect:(NSNotification *)notification
@@ -60,39 +65,57 @@
     {
         return;
     }
-    self.externalWindow = [[UIWindow alloc] initWithFrame:[screen bounds]];
+    
+    if (screen == [UIScreen mainScreen])
+    {
+        self.externalWindow =  [UIApplication sharedApplication].delegate.window;
+//        self.externalWindow = [UIWindow cu]
+    }
+    else
+    {
+        self.externalWindow = [[UIWindow alloc] initWithFrame:[screen bounds]];
+        self.externalWindow.screen = screen;
+    }
 
-    self.externalWindow.screen = screen;
     
     self.marqueeView = [[[NSBundle mainBundle] loadNibNamed:@"MarqueeView" owner:self options:nil] firstObject];
     [self.marqueeView setFrame:self.externalWindow.frame];
     //UIView      *marqueeView = [[UIView alloc] initWithFrame:self.externalWindow.frame];
     [self.externalWindow addSubview:self.marqueeView];
+    
     [self.externalWindow makeKeyAndVisible];
-    self.marqueeView.transform = CGAffineTransformMakeRotation(M_PI);
+    
+    UIDevice *currentDevice = [UIDevice currentDevice];
+    if ([currentDevice.model rangeOfString:@"Simulator"].location != NSNotFound) {
+       self.marqueeView.transform = CGAffineTransformMakeRotation(M_PI);
+    }
     
     NSLog(@"image view: %@", self.marqueeView.imageView);
     
     self.microphone = [EZMicrophone microphoneWithDelegate:self];
 
-    self.marqueeView.imageView.image = [UIImage imageNamed:@"altbeast.png"];
-   
-    self.marqueeView.audioPlot.backgroundColor = [UIColor blackColor];
+    
+//    self.marqueeView.imageView.image = [UIImage imageNamed:@"marquee_back_to_the_arcade.jpg"];
+    //self.marqueeView.imageView.image = [UIImage imageNamed:@"altbeast.png"];
+    self.marqueeView.imageView.image = [UIImage imageNamed:@"c413753364ffbf8341be5bd3332d9653.jpg"];
+    
+
+    SLColorArt  *colorArt = [[SLColorArt alloc] initWithImage: [UIImage imageNamed:@"c413753364ffbf8341be5bd3332d9653-reverse.jpg"]];
+    self.marqueeView.audioPlot.backgroundColor = colorArt.backgroundColor;
     self.marqueeView.audioPlot.plotType = EZPlotTypeBuffer;
     self.marqueeView.audioPlot.shouldFill = YES;
     self.marqueeView.audioPlot.shouldMirror = YES;
-    
-    self.marqueeView.audioPlot.colors = @[
-                                          [UIColor colorWithRed:1 green:0.467 blue:0 alpha:1],
-                                          [UIColor blackColor],
-                                          [UIColor colorWithRed:0.157 green:0.6 blue:0.765 alpha:1],
-                                          [UIColor colorWithRed:0.125 green:0.675 blue:0.910 alpha:1],
-                                          [UIColor colorWithRed:0.310 green:0.765 blue:0.341 alpha:1]
-                                          ];
 
-    self.marqueeView.audioPlot.color = [UIColor colorWithWhite:0.598 alpha:1.000];
     
-    self.marqueeView.audioPlot.numOfBins = 24;
+    self.marqueeView.audioPlot.colors = @[colorArt.primaryColor, colorArt.secondaryColor, colorArt.detailColor];
+
+//    self.marqueeView.primaryColor.backgroundColor = colorArt.primaryColor;
+//    self.marqueeView.secondaryColor.backgroundColor = colorArt.secondaryColor;
+//    self.marqueeView.detailColor.backgroundColor = colorArt.detailColor;
+    
+    self.marqueeView.audioPlot.color = colorArt.primaryColor;
+    
+    self.marqueeView.audioPlot.numOfBins = 12;
     [self.microphone startFetchingAudio];
 
 }
